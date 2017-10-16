@@ -6,17 +6,18 @@ namespace Evitando.Duplicacao.de.Codigo.Exercicios
     // um periodo de dias, como podemos evitar a duplicacao
     // de codigo abaixo?
 
-    public class SincronizacaoExtratoUtilizacaoDto    
+    public class SincronizacaoExtratoUtilizacaoDto : SincronizacaoDTO   
     {
         public long[] IdBeneficiarios { get; set; }
-        public string UrlRetorno { get; set; }
-        public DateTime DataInicial { get; set; }
-        public DateTime DataFinal { get; set; }
     }
 
-    public class SincronizacaoProtocoloPendenteNfDto
+    public class SincronizacaoProtocoloPendenteNfDto : SincronizacaoDTO
     {
         public long[] ListaIdPrestadores { get; set; }
+    }
+
+    public class SincronizacaoDTO
+    {
         public string UrlRetorno { get; set; }
         public DateTime DataInicial { get; set; }
         public DateTime DataFinal { get; set; }

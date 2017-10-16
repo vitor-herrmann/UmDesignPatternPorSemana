@@ -1,6 +1,8 @@
-﻿namespace Evitando.Duplicacao.de.Codigo.OO
+﻿using Evitando.Duplicacao.de.Codigo.Exercicios;
+
+namespace Evitando.Duplicacao.de.Codigo.OO
 {
-    public class Entidade<T>
+    public class Entidade<T> : DTO
     {
         public long Handle { get; set; }
 

@@ -6,31 +6,19 @@ namespace Evitando.Duplicacao.de.Codigo.Exercicios
     // beneficiário e contratante em um dto, atualmente nosso código esta duplicado
     // para cada uma das entidades, como podemos melhorar isso?
 
-    public class Prestador : Entidade<Prestador>
+    public class Prestador : ContatoDto
     {
-        public string Email { get; set; }
-
-        public string Telefone { get; set; }
-
-        public string Endereco { get; set; }
+        
     }
 
-    public class Beneficiario : Entidade<Beneficiario>
+    public class Beneficiario : ContatoDto
     {
-        public string Email { get; set; }
-
-        public string Telefone { get; set; }
-
-        public string Endereco { get; set; }
+        
     }
 
-    public class Contratante : Entidade<Contratante>
+    public class Contratante : ContatoDto
     {
-        public string Email { get; set; }
-
-        public string Telefone { get; set; }
-
-        public string Endereco { get; set; }
+        
     }
 
     public class ContatoDto
