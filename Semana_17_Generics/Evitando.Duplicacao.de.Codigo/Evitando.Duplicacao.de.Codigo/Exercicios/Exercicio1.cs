@@ -32,33 +32,13 @@ namespace Evitando.Duplicacao.de.Codigo.Exercicios
 
     public class InformacoesContato
     {
-        public ContatoDto ObterContato(Beneficiario beneficiario)
+        public ContatoDto ObterContato(ContatoDto dados)
         {
             return new ContatoDto
             {
-                Email = beneficiario.Email,
-                Endereco = beneficiario.Endereco,
-                Telefone = beneficiario.Telefone
-            };
-        }
-
-        public ContatoDto ObterContato(Prestador prestador)
-        {
-            return new ContatoDto
-            {
-                Email = prestador.Email,
-                Endereco = prestador.Endereco,
-                Telefone = prestador.Telefone
-            };
-        }
-
-        public ContatoDto ObterContato(Contratante contratante)
-        {
-            return new ContatoDto
-            {
-                Email = contratante.Email,
-                Endereco = contratante.Endereco,
-                Telefone = contratante.Telefone
+                Email = dados.Email,
+                Endereco = dados.Endereco,
+                Telefone = dados.Telefone
             };
         }
     }
